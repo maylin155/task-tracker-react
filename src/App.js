@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Form from './components/Form';
 import Footer from "./components/Footer";
 import About from "./components/About";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 function App() {
