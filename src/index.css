@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  
+  /* Additional responsive styles, if needed */
+  @media (max-width: 768px) {
+    .container {
+      width: 98%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #343a40;
+  }
+
+  .button {
+    padding: 6px 12px; /* Increased padding for a larger button */
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+  }
+
+  .tasks-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  
+  }
+
+  .task {
+    padding: 10px 30px;
+    border: 1px solid black;
+    background-color: #e8e9eb;
+  }
+
+  .task h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .task.reminder {
+    border-left:  5px solid green;
+  }
+
+  /* Form CSS */
+
+  .add-form {
+    background: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-control input[type="text"],
+  .form-control input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-control input[type="checkbox"] {
+    width: auto;
+    margin: 0; /* Remove margin to align with text */
+  }
+  
+  .form-control-check {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add space between checkbox and label */
+  }
+  
+  .form-control-check label {
+    margin: 0; /* Remove margin */
+  }
+  
+  .btn {
+    margin-top: 20px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    width: 400px;
+   max-width: 1200px;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+
+  
+  @media (max-width: 600px) {
+    .add-form {
+      padding: 10px;
+    }
+  
+    .form-control input[type="text"],
+    .form-control input[type="checkbox"] {
+      padding: 8px;
+    }
+  
+    .btn {
+      padding: 8px;
+    }
+  }
+  
